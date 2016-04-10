@@ -1,0 +1,15 @@
+{
+  "name": "expressjs-blog",
+  "version": "1.0.0",
+  "description": "A simple ExpressJS blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bideowego@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  }
+}
