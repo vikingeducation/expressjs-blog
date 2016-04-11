@@ -1,0 +1,26 @@
+<header class="page-header text-center">
+  <h1>
+    <%= post.title %>
+    <small>
+      <br>
+      Posted on: <%= new Date(post.createdAt).toDateString() %>
+      <br>
+      by <%= post.author %>
+    </small>
+  </h1>
+</header>
+
+<img class="img-responsive center-block" src="<%= post.image %>" alt="Image">
+
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+
+    <blockquote>
+      <%= post.body %>
+      <br><br>
+      - <%= post.author %>
+    </blockquote>
+
+  </div>
+</div>
+

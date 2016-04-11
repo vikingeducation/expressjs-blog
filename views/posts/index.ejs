@@ -1,0 +1,35 @@
+<header class="page-header text-center">
+  <h1>ExpressJS Blog</h1>
+</header>
+
+<div class="row">
+  
+  <% for (var id in posts) { %>
+    <% var post = posts[id] %>
+
+    <div class="col-xs-8 col-xs-offset-2">
+
+      <header class="page-header">
+        <h2>
+          <a href="/posts/<%= id %>"><%= post.title %></a>
+          <small>
+            Posted on: <%= new Date(post.createdAt).toDateString() %>
+            <br>
+            by <%= post.author %>
+          </small>
+        </h2>
+      </header>
+
+    </div>
+
+  <% } %>
+
+</div>
+
+
+
+
+
+
+
+
