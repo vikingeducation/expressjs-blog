@@ -11,13 +11,13 @@ Make sure you have [Node.js](https://nodejs.org/en/) installed first.
 
 Next cd into the project directory and install the dependencies:
 
-```bash
+```shell
 $ npm install
 ```
 
 Run the server:
 
-```bash
+```shell
 $ node app.js
 #=> Serving at http://localhost:3000
 ```
@@ -25,26 +25,26 @@ $ node app.js
 
 Run all tests:
 
-```bash
+```shell
 $ npm test
 ```
 
 
 Run back-end tests only:
 
-```bash
+```shell
 $ jasmine-node --verbose spec/backend
 ```
 
 Run front-end tests only:
 
-```bash
+```shell
 $ karma start
 ```
 
 Run seeds to regenerate data:
 
-```bash
+```shell
 $ node seeds.js
 ```
 
