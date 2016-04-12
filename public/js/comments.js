@@ -52,6 +52,8 @@ function addComment() {
     author: $('#author').val(),
     body: $('#body').val()
   });
+  $('#author').val('');
+  $('#body').val('');
   $('#comments').prepend($comment);
 }
 

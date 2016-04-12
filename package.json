@@ -4,8 +4,7 @@
   "description": "A simple ExpressJS blog",
   "main": "app.js",
   "scripts": {
-    "test": "jasmine-node --verbose spec/backend",
-    "test_karma"
+    "test": "jasmine-node --verbose spec/backend; karma start"
   },
   "author": "bideowego@gmail.com",
   "license": "MIT",
