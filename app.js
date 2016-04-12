@@ -52,7 +52,12 @@ app.use(function(request, response, next) {
 // Server
 // ----------------------------------------
 
-app.listen(3000, function() {
-  console.log('Serving at http://localhost:3000');
-});
+if (require.main === module) {
+  app.listen(3000, function() {
+    console.log('Serving at http://localhost:3000');
+  });
+} else {
+  module.exports = app;
+}
+
 

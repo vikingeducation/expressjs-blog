@@ -59,6 +59,15 @@ function removeNoComments() {
   $('#no-comments').remove();
 }
 
+function setCommentFormSubmitListener() {
+  $('#comment-form').on('submit', function(e) {
+    e.preventDefault();
+    removeNoComments();
+    addComment();
+    return false;
+  });
+}
+
 
 // ----------------------------------------
 // Event Listener
@@ -67,13 +76,7 @@ function removeNoComments() {
 $(document).ready(function() {
 
   if ($('#posts-show').length) {
-    var $commentForm = $('#comment-form');
-    $commentForm.on('submit', function(e) {
-      e.preventDefault();
-      removeNoComments();
-      addComment();
-      return false;
-    });
+    setCommentFormSubmitListener();
   }
 
 });

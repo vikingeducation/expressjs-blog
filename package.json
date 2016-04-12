@@ -4,13 +4,21 @@
   "description": "A simple ExpressJS blog",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine-node --verbose spec/backend",
+    "test_karma"
   },
   "author": "bideowego@gmail.com",
   "license": "MIT",
   "dependencies": {
     "ejs": "^2.4.1",
     "express": "^4.13.4",
-    "faker": "^3.1.0"
+    "faker": "^3.1.0",
+    "request": "^2.70.0"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.8"
   }
 }
