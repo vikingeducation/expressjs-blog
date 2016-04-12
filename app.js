@@ -7,6 +7,7 @@ var posts = require('./data/posts');
 // ----------------------------------------
 
 app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/public'));
 
 
 // ----------------------------------------
